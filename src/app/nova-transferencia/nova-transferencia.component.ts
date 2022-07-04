@@ -9,13 +9,8 @@ export class NovaTransferenciaComponent {
 
   @Output() aoTransferir = new EventEmitter<any>();
 
-  valor: number;
-  destino: number;
-
-  constructor() {
-    this.valor = 0;
-    this.destino = 0;
-  };
+  destino: number | null = null;
+  valor: number | null = null;
 
   transferir() {
     console.log("Transferindo...");
