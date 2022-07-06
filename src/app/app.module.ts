@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app.routing.module';
 import { ExtratoComponent } from './extrato/extrato.component';
 import { NovaTransferenciaComponent } from './nova-transferencia/nova-transferencia.component';
 
@@ -20,7 +21,8 @@ registerLocaleData(localePt)
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule,
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' },
